@@ -1,0 +1,205 @@
+Hello World!
+Service client created ? ready to go
+
+Upload a model
+Load model: 409:Service request failed.
+Status: 409 (Conflict)
+
+Content:
+{"error":{"code":"ModelAlreadyExists","message":"Model with same ID already exists dtmi:com:contoso:SampleModel;1. Use Model_List API to view models that already exist. See the Swagger example.(http://aka.ms/ModelListSwSmpl)"}}
+
+Headers:
+Strict-Transport-Security: REDACTED
+Date: Thu, 13 Aug 2020 07:38:50 GMT
+Content-Length: 227
+Content-Type: application/json; charset=utf-8
+
+Type name: System.Collections.Generic.Dictionary`2[System.String,System.String]: dtmi:com:contoso:SampleModel;1
+Type name: System.Collections.Generic.Dictionary`2[System.String,System.String]: dtmi:example:Room;2
+Type name: System.Collections.Generic.Dictionary`2[System.String,System.String]: dtmi:example:Floor;1
+Type name: System.Collections.Generic.Dictionary`2[System.String,System.String]: dtmi:contosocom:DigitalTwins:Thermostat;1
+Type name: System.Collections.Generic.Dictionary`2[System.String,System.String]: dtmi:contosocom:DigitalTwins:Space;1
+Created twin: sampleTwin-0
+Created twin: sampleTwin-1
+Created twin: sampleTwin-2
+Created relationship successfully
+Created relationship successfully
+Twin sampleTwin-0 is connected to:
+ -contains->sampleTwin-1
+ -contains->sampleTwin-2
+{
+  "$dtId": "floor1",
+  "$etag": "W/\u00224c40bbed-7253-4f75-8ba8-f564aa331a75\u0022",
+  "DisplayName": "Floor 1",
+  "Location": "Puget Sound",
+  "Temperature": 65,
+  "ComfortIndex": 0,
+  "$metadata": {
+    "$model": "dtmi:contosocom:DigitalTwins:Space;1",
+    "DisplayName": {
+      "desiredValue": "Floor 1",
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    },
+    "Location": {
+      "desiredValue": "Puget Sound",
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    },
+    "Temperature": {
+      "desiredValue": 65,
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    },
+    "ComfortIndex": {
+      "desiredValue": 0,
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    }
+  }
+}
+---------------
+{
+  "$dtId": "sampleTwin-0",
+  "$etag": "W/\u002213e093a2-f712-4724-ad8b-236f6029de67\u0022",
+  "data": "Hello World!",
+  "$metadata": {
+    "$model": "dtmi:com:contoso:SampleModel;1",
+    "data": {
+      "desiredValue": "Hello World!",
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    }
+  }
+}
+---------------
+{
+  "$dtId": "room21",
+  "$etag": "W/\u002216750b09-a44d-4a7d-83fb-14b05bf3e944\u0022",
+  "DisplayName": "Room 21",
+  "Location": "Puget Sound",
+  "Temperature": 65,
+  "ComfortIndex": 0,
+  "$metadata": {
+    "$model": "dtmi:contosocom:DigitalTwins:Space;1",
+    "DisplayName": {
+      "desiredValue": "Room 21",
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    },
+    "Location": {
+      "desiredValue": "Puget Sound",
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    },
+    "Temperature": {
+      "desiredValue": 65,
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    },
+    "ComfortIndex": {
+      "desiredValue": 0,
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    }
+  }
+}
+---------------
+{
+  "$dtId": "thermostat67",
+  "$etag": "W/\u00221bdf0288-0955-4cb9-8b79-6bc2626d281b\u0022",
+  "DisplayName": "Thermostat 67",
+  "Location": "Puget Sound",
+  "FirmwareVersion": "1.3.9",
+  "Temperature": 65,
+  "ComfortIndex": 0,
+  "$metadata": {
+    "$model": "dtmi:contosocom:DigitalTwins:Thermostat;1",
+    "DisplayName": {
+      "desiredValue": "Thermostat 67",
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    },
+    "Location": {
+      "desiredValue": "Puget Sound",
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    },
+    "FirmwareVersion": {
+      "desiredValue": "1.3.9",
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    },
+    "Temperature": {
+      "desiredValue": 65,
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    },
+    "ComfortIndex": {
+      "desiredValue": 0,
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    }
+  }
+}
+---------------
+{
+  "$dtId": "sampleTwin-1",
+  "$etag": "W/\u00227d028f04-4142-40ab-9c8e-543c0453129f\u0022",
+  "data": "Hello World!",
+  "$metadata": {
+    "$model": "dtmi:com:contoso:SampleModel;1",
+    "data": {
+      "desiredValue": "Hello World!",
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    }
+  }
+}
+---------------
+{
+  "$dtId": "sampleTwin-2",
+  "$etag": "W/\u002276ed9282-0c66-43fb-a5ba-ff62cf998264\u0022",
+  "data": "Hello World!",
+  "$metadata": {
+    "$model": "dtmi:com:contoso:SampleModel;1",
+    "data": {
+      "desiredValue": "Hello World!",
+      "desiredVersion": 1,
+      "ackVersion": 1,
+      "ackCode": 200,
+      "ackDescription": "Auto-Sync"
+    }
+  }
+}
+---------------
